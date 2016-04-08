@@ -10,6 +10,22 @@
  */
 function auto_login_url_tokens_uninstall() {
 
-  // Delete our content type.
+  // Get database connection.
+  $connection = \Drupal::database();
+
+  // Get all alu_token type nodes to delete.
+  $result = $connection->select('node', 'n')
+    ->fields('n')
+    ->condition('n.type', 'auto_login_url_token', '=')
+    ->execute()
+    ->fetchCol('nid');
+
+  \Drupal::logger('auto_login_url_tokens')->notice(serialize($result));
+
+  $entities = \Drupal::entityTypeManager()->getStorage('node')->loadMultiple($result);
+  // Delete 'auto_login_url_token' type nodes.
+  \Drupal::entityTypeManager()->getStorage('node')->delete($entities);
+
+  // Delete 'auto_login_url_token' content type.
 //  node_type_delete('auto_login_url_token');
 }
