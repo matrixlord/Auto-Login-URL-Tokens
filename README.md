@@ -14,5 +14,5 @@ For my usage I haven't seen any problems.
 
 ## Credits
 
-Developed by Thanos Nokas
+Developed by Thanos Nokas      
 Developed by Thanos Korakas
