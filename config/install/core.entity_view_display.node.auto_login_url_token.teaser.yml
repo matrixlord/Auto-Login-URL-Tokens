@@ -1,0 +1,17 @@
+#uuid: b9dad633-d204-43a4-b300-f9c6311853c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.auto_login_url_token
+  module:
+    - user
+id: node.auto_login_url_token.teaser
+targetEntityType: node
+bundle: auto_login_url_token
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

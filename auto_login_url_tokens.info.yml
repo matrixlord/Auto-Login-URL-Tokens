@@ -1,0 +1,7 @@
+name: Auto Login URL Tokens
+type: module
+description: 'Extra custom Auto Login URL Tokens.'
+core: 8.x
+
+dependencies:
+  - auto_login_url

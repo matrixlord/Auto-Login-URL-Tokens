@@ -1,0 +1,18 @@
+#uuid: f2ac9a4a-e169-469a-b757-8740b6a78b57
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Auto Login URL Token'
+type: auto_login_url_token
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true
