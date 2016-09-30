@@ -1,16 +1,15 @@
-uuid: 6a9502a0-6317-46cb-a300-fd99e756e102
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_alu_token_url
-field_name: field_alu_token_url
+  config:
+    - node.type.auto_login_url_token
+id: node.field_token_url
+field_name: field_token_url
 entity_type: node
-type: string
+type: string_long
 settings:
-  max_length: 255
-  is_ascii: false
   case_sensitive: false
 module: core
 locked: false

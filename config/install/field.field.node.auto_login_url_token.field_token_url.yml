@@ -1,12 +1,11 @@
-#uuid: 7e25df8f-5f4b-4cdb-b400-c4faea53c409
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_alu_token_url
+    - field.storage.node.field_token_url
     - node.type.auto_login_url_token
-id: node.auto_login_url_token.field_alu_token_url
-field_name: field_alu_token_url
+id: node.auto_login_url_token.field_token_url
+field_name: field_token_url
 entity_type: node
 bundle: auto_login_url_token
 label: 'Token URL'
@@ -16,4 +15,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: string_long

@@ -1,9 +1,8 @@
-#uuid: 77fd7d5e-d292-4164-9c00-d48727317db3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.auto_login_url_token.field_alu_token_url
+    - field.field.node.auto_login_url_token.field_token_url
     - node.type.auto_login_url_token
   module:
     - path
@@ -17,13 +16,13 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
-  field_alu_token_url:
+  field_token_url:
     weight: 31
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: string_textarea
   path:
     type: path
     weight: 30
