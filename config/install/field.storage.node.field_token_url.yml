@@ -3,8 +3,9 @@ status: true
 dependencies:
   module:
     - node
-  config:
-    - node.type.auto_login_url_token
+  enforced:
+      module:
+        - auto_login_url_tokens
 id: node.field_token_url
 field_name: field_token_url
 entity_type: node
